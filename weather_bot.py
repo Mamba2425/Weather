@@ -9,8 +9,8 @@ from telegram.ext import (
     ContextTypes, filters
 )
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN") or "ВАШ_ТЕЛЕГРАМ_ТОКЕН"
-WEATHER_API_KEY = os.getenv("WEATHER_API_KEY") or "ВАШ_OPENWEATHERMAP_КЛЮЧ"
+TELEGRAM_TOKEN = os.getenv("7744517884:AAF4N1XJostF6o8HnIOoYLP7JVEMX3bVdf8") or "ВАШ_ТЕЛЕГРАМ_ТОКЕН"
+WEATHER_API_KEY = os.getenv("a690bd87765197cadf3994735346cc02") or "ВАШ_OPENWEATHERMAP_КЛЮЧ"
 
 logging.basicConfig(level=logging.INFO)
 
