@@ -49,20 +49,20 @@ def get_forecast(city):
 
 def format_weather(w):
     return (
-        f"Погода в {w['city']}, {w['country']}:
-"
-        f"{w['desc'].capitalize()}
-"
-        f"Температура: {w['temp']}°C (ощущается как {w['feels_like']}°C)
-"
-        f"Влажность: {w['humidity']}%
-"
+        f"Погода в {w['city']}, {w['country']}:"
+
+        f"{w['desc'].capitalize()}"
+
+        f"Температура: {w['temp']}°C (ощущается как {w['feels_like']}°C)"
+
+        f"Влажность: {w['humidity']}%"
+
         f"Ветер: {w['wind']} м/с"
     )
 
 def format_forecast(forecast):
-    text = "Прогноз на 5 дней:
-"
+    text = "Прогноз на 5 дней:"
+
     for f in forecast:
         text += f"\n{f['date']} — {f['desc'].capitalize()}, {f['temp']}°C"
     return text
@@ -121,5 +121,5 @@ def main():
     print("Бот запущен...")
     app.run_polling()
 
-if __name__ == "__main__":
+if __name__ == "__weather_bot__":
     main()
